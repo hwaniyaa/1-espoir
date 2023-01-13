@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <script src="./js/swiper-bundle.min.js"></script>
+  <title>Expect better you-espoir</title>
+</head>
+<body>
+  <header class="header-area">
+    <section class="header-box">
+      <div class="header-box--left item-inner">
+        <a href="#"><img src="./images/top-logo_img.png" alt=""></a>
+        <div class="login">
+          <span><a href="#">ログイン</a></span>
+          <span><a href="#">ログアップ</a></span>
+        </div>
+      </div>
+      <div class="header-box--right item-inner">
+        <p class="menu">menu
+          <span class="material-icons">
+            keyboard_arrow_right
+            </span>
+        </p>
+        <div class="icons">
+          <span><a href="#"><img src="./images/btn_sch.png" alt="サーチアイコン"></a></span>
+          <span><a href="#"><img src="./images/btn_bsk.png" alt="カートアイコン"></a></span>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="main-area">
+    <section class="main-box">
+      <div id="main-swiper" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <a href="#"><img src="./images/main-Slider-img/main-Slider-img01.jpg" alt="NEW">
+                <div class="slide-items-txt item-inner">
+                  <p class="slide-txt01">NEW</p>
+                  <p class="slide-txt02 letter2">ザ·スリック&nbsp;&nbsp; リップスティック&nbsp;&nbsp; <br/>クリームマット</p>
+                  <p class="slide-txt03 letter1">リップクリームのフレームを外れる 驚くほどなめらかなクリームマットテクスチャー</p>
+                </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#"><img src="./images/main-Slider-img/main-Slider-img02.jpg" alt="No.1 ベース名家">
+                <div class="slide-items-txt item-inner">
+                  <p class="slide-txt01">No.1 ベース名家</p>
+                  <p class="slide-txt02 letter2">公式モールブランドウィーク <br/>#&nbsp;G&nbsp;I&nbsp;T&nbsp;&nbsp;プレゼント</p>
+                  <p class="slide-txt03 letter1">最大50%割引特典と公式モール単独ギフトをお見逃しなく!</p>
+                </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#"><img src="./images/main-Slider-img/main-Slider-img03.jpg" alt="BEST">
+                <div class="slide-items-txt item-inner">
+                  <p class="slide-txt01">BEST</p>
+                  <p class="slide-txt02 letter2">リアル &nbsp;&nbsp;アイ &nbsp;&nbsp;パレット&nbsp;&nbsp; オートミルク<br/>エディション</p>
+                  <p class="slide-txt03 letter1">ソフト トーン カラー組合せ デイリーパレット</p>
+                </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#"><img src="./images/main-Slider-img/main-Slider-img04.jpg" alt="HOT">
+                <div class="slide-items-txt item-inner">
+                  <p class="slide-txt01">HOT</p>
+                  <p class="slide-txt02 letter2">クチュール&nbsp;&nbsp; リップ &nbsp;&nbsp;ティント&nbsp;&nbsp; <br/>ベルベット&シャイン&nbsp;&nbsp; 1+1</p>
+                  <p class="slide-txt03 letter1">一つ買ったらもう一つ！ エスパー Best Lip 1+1</p>
+                </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#"><img src="./images/main-Slider-img/main-Slider-img05.jpg" alt="NEW">
+                <div class="slide-items-txt item-inner">
+                  <p class="slide-txt01">NEW</p>
+                  <p class="slide-txt02 letter2">ビーグローファンデーション<br/>ニュークラス</p>
+                  <p class="slide-txt03 letter1">24H ハリのある明るいグローファンデーション</p>
+                </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#"><img src="./images/main-Slider-img/main-Slider-img06.jpg" alt="January">
+                <div class="slide-items-txt item-inner">
+                  <p class="slide-txt01">January</p>
+                  <p class="slide-txt02 letter2">espoir&nbsp;&nbsp; BENEFIT&nbsp;&nbsp; LOUNGE</p>
+                  <p class="slide-txt03 letter1">エスパー公式モールだけの特別な特典</p>
+                </div>
+              </a>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    var swiper = new Swiper("#main-swiper", {
+      slidesPerView: "auto",
+      loop:true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+  </script>
+</body>
+</html>
