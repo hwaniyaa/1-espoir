@@ -2,17 +2,40 @@ body {
   font-family: 'Roboto', 'Noto Sans JP', '돋움', sans-serif;
 }
 .inner {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.item-inner {
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 100px;
+}
+.item-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 92px 0;
+  outline: 1px solid red;
+}
+.id-inner {
+  padding: 105px 0;
 }
 .letter1 {
   letter-spacing: -1px;
 }
 .letter2 {
   letter-spacing: -8px;
+}
+.mini {
+  outline: 1px solid #111;
+  display: inline-block;
+  padding: 15px 13px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.btn-bar {
+  position: absolute;
+  width: 90% !important;
+  height: 3px !important;
+  z-index: 1;
+  top: 92% !important;
+  left: 0 !important;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  --swiper-theme-color: #111;
 }
