@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Roboto", "Noto Sans JP", "돋움", sans-serif;
+  font-family: "Teko", "Noto Sans JP", "돋움", sans-serif;
 }
 
 .inner {
@@ -13,7 +13,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 92px 0;
-  outline: 1px solid red;
 }
 
 .live-inner {
@@ -23,6 +22,12 @@ body {
 
 .id-inner {
   padding: 105px 0;
+}
+
+.footer-inner {
+  max-width: 1440px;
+  padding: 65px 0 0;
+  margin: 0 auto;
 }
 
 .letter1 {
