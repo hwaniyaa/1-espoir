@@ -97,3 +97,46 @@ body {
   color: #555;
   line-height: 1.3;
 }
+
+.models {
+  position: relative;
+}
+.models .plus {
+  outline: 1px solid red;
+}
+.models .plus::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url(/images/lb_plus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.models .plus:hover::before {
+  opacity: 1;
+}
+.models .plus02::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url(/images/lb_plus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -6,6 +6,12 @@
   width: 100%;
   margin-top: 28px;
 }
+.header-box.no .login {
+  color: #fff;
+}
+.header-box.no .menu {
+  color: #fff;
+}
 .header-box .header-box--left {
   display: flex;
   justify-content: space-between;

@@ -10,7 +10,6 @@
           color: #fff;
         }
         .swiper-slide {
-          
           a {
             position: relative;
             img {
@@ -52,8 +51,21 @@
       .item-imgs {
         display: flex;
         flex-wrap: wrap;
+        .model-01.models {
+          .plus::before {
+            top: 29%; left: 48%;
+          }
+        }
         .model-02 {
           margin-top: 12%;
+        }
+        .model-02.models {
+          .plus::before {
+            top: 16%; left: 28%;
+          }
+          .plus02::after {
+            top: 75%; left: 65%;
+          }
         }
       }
     }
@@ -63,6 +75,11 @@
         position: absolute;
         top: 14%; left: 50%;
         transform: translateX(-50%);
+      }
+      .model-03.models {
+        .plus::before {
+          top: 33%; left: 47%;
+        }
       }
       .item-img03 {
         position: relative;
@@ -100,6 +117,30 @@
             vertical-align: top;
           }
         }
+        .models:first-child {
+          .plus::before {
+            top: 340px; left: 55%;
+          }
+        }
+        .models:last-child {
+          .plus::before {
+            top: 190px; left: 27%;
+          }
+        }
+      }
+    }
+    .item-box03 {
+      .model-01.models {
+        .plus::before {
+          top: 72% !important;
+          left: 68% !important;
+        }
+      }
+      .model-02.models {
+        .plus::before {
+          top: 38% !important;
+          left: 68% !important;
+        }
       }
     }
     .item-box04 {
@@ -110,12 +151,42 @@
           color: #b8815a;
         }
       }
+      .model-04 {
+        .models:first-child {
+          .plus::before {
+            top: 220px !important; 
+            left: 28% !important;
+          }
+        }
+        .models:last-child {
+          .plus::before {
+            top: 240px !important; 
+            left: 12% !important;
+          }
+          .plus02::after {
+            top: 180px !important; 
+            left: 80% !important;
+          }
+        }
+      }
     }
     .item-box05 {
       display: flex;
       justify-content: center;
       > div {
         display: flex;
+        .models:first-child {
+          .plus::before {
+            top: 29%; 
+            left: 43%;
+          }
+        } 
+        .models:last-child {
+          .plus::before {
+            top: 35%; 
+            left: 46%;
+          }
+        } 
       }
       a {
         &:nth-child(2) {
@@ -165,7 +236,6 @@
       height: 510px;
       a {
         display: inline-block;
-        outline: 1px solid red;
         &::before {
           content: "";
           display: block;
@@ -200,12 +270,26 @@
     .swiper-slide {
       width: 325px;
       height: 700px;
+      position: relative;
       a {
+        &::before {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 100px;
+          background-image: url(/images/hottop/btn_tiktok.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          top: 40%; left: 35%;
+          transform: translateY(-50%);
+        }
         img {
           width: 100%;
           object-fit: contain;
           overflow: hidden;
           border-radius: 10px;
+          
         }
       }
     }

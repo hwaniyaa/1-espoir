@@ -47,8 +47,20 @@
   display: flex;
   flex-wrap: wrap;
 }
+.main-area .item-area .item-box01 .item-imgs .model-01.models .plus::before {
+  top: 29%;
+  left: 48%;
+}
 .main-area .item-area .item-box01 .item-imgs .model-02 {
   margin-top: 12%;
+}
+.main-area .item-area .item-box01 .item-imgs .model-02.models .plus::before {
+  top: 16%;
+  left: 28%;
+}
+.main-area .item-area .item-box01 .item-imgs .model-02.models .plus02::after {
+  top: 75%;
+  left: 65%;
 }
 .main-area .item-area .item-box02 {
   position: relative;
@@ -58,6 +70,10 @@
   top: 14%;
   left: 50%;
   transform: translateX(-50%);
+}
+.main-area .item-area .item-box02 .model-03.models .plus::before {
+  top: 33%;
+  left: 47%;
 }
 .main-area .item-area .item-box02 .item-img03 {
   position: relative;
@@ -93,6 +109,22 @@
   overflow: hidden;
   vertical-align: top;
 }
+.main-area .item-area .item-box02 .model-04 .models:first-child .plus::before {
+  top: 340px;
+  left: 55%;
+}
+.main-area .item-area .item-box02 .model-04 .models:last-child .plus::before {
+  top: 190px;
+  left: 27%;
+}
+.main-area .item-area .item-box03 .model-01.models .plus::before {
+  top: 72% !important;
+  left: 68% !important;
+}
+.main-area .item-area .item-box03 .model-02.models .plus::before {
+  top: 38% !important;
+  left: 68% !important;
+}
 .main-area .item-area .item-box04 {
   padding-bottom: 92px;
 }
@@ -100,12 +132,32 @@
   width: 35%;
   color: #b8815a;
 }
+.main-area .item-area .item-box04 .model-04 .models:first-child .plus::before {
+  top: 220px !important;
+  left: 28% !important;
+}
+.main-area .item-area .item-box04 .model-04 .models:last-child .plus::before {
+  top: 240px !important;
+  left: 12% !important;
+}
+.main-area .item-area .item-box04 .model-04 .models:last-child .plus02::after {
+  top: 180px !important;
+  left: 80% !important;
+}
 .main-area .item-area .item-box05 {
   display: flex;
   justify-content: center;
 }
 .main-area .item-area .item-box05 > div {
   display: flex;
+}
+.main-area .item-area .item-box05 > div .models:first-child .plus::before {
+  top: 29%;
+  left: 43%;
+}
+.main-area .item-area .item-box05 > div .models:last-child .plus::before {
+  top: 35%;
+  left: 46%;
 }
 .main-area .item-area .item-box05 a:nth-child(2) {
   margin-top: 12%;
@@ -154,7 +206,6 @@
 }
 .main-area .live-area .swiper-slide a {
   display: inline-block;
-  outline: 1px solid red;
 }
 .main-area .live-area .swiper-slide a::before {
   content: "";
@@ -188,6 +239,20 @@
 .main-area .hotTop-area .swiper-slide {
   width: 325px;
   height: 700px;
+  position: relative;
+}
+.main-area .hotTop-area .swiper-slide a::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url(/images/hottop/btn_tiktok.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translateY(-50%);
 }
 .main-area .hotTop-area .swiper-slide a img {
   width: 100%;
